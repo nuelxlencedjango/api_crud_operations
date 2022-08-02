@@ -32,11 +32,11 @@ from rest_framework.decorators import api_view
 @api_view(['GET'])
 def apiOverView(request):
     api_urls={
-        'list': '/product_list/',
-        'detail view': '/product_detail/<int:id>',
-        'create':'/product_create/',
-        'update':'/product_update/<int:id>/',
-        'delete': '/product_delete/<int:id>/'
+        'list': '/product_list/', #copy and paste '/product_list' on the url bar to see product list
+        'detail view': '/product_detail/<int:id>',  #copy and paste '/product_detail/<int:id>' on the url bar to see to see detail view
+        'create':'/product_create/',  #copy and paste '/product_create' on the url bar to see to create products
+        'update':'/product_update/<int:id>/', #/copy and paste '/product_update/<int:id>/' on the url bar to update the product u wish
+        'delete': '/product_delete/<int:id>/' #copy and paste '/product_delete/<int:id>' on the url bar to delte a product you wish.
 
     } 
 
@@ -95,4 +95,3 @@ def deleteProduct(request,pk):
 
 
 
-    
