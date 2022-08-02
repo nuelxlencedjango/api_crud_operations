@@ -91,3 +91,8 @@ def deleteProduct(request,pk):
     product.delete()
 
     return Response("Item deleted successfully!")
+
+
+
+
+    
